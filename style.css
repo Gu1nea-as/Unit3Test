@@ -1,4 +1,11 @@
- 
+:root{
+    --html-background: rgb(246, 177, 177);
+    --shadow: rgb(51, 51, 51);
+    --nav-active: rgb(220, 27, 27);
+    --spotlight: rgb(171, 171, 171);
+    --text-background: rgb(211, 211, 211);
+    --text-color: rgb(111, 111, 111);
+}
 /* =============================================
 Base styles used by All Screens DO NOT EDIT BELOW
 ============================================= */
@@ -46,3 +53,159 @@ Base styles used by All Screens DO NOT EDIT ABOVE
 ============================================= */
  
 /* HTML and Body Styles */
+
+html{
+    background-color: var(--html-background);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+body{
+    background-color: white;
+    size: 1024px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: var(--shadow) 10px 10px 25px, var(--shadow) -10px 10px 25px;
+}
+body>header{
+    background-color: white;
+    width: 100%;
+}
+
+#logoImage{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 15px;
+}
+
+.top li{
+    margin: 10px;
+}
+.top a{
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.top a:hover{
+    color: var(--nav-active);
+    text-shadow: 0px 0px 2px black, 0px 0px 15px white;
+}
+
+p img{
+    float: right;
+    width: 45%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 120px;
+    margin-left: 50px;
+    transform: translate(0, 60px);
+    transform: rotate(30deg);
+    box-shadow: var(--shadow) 10px -10px 30px;
+}
+section.spotlight{
+    background-color: var(--spotlight);
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+section.spotlight h1{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-shadow: white -2px 0px 1px, white -5px 0px 30px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    text-align: right;
+}
+section.spotlight img{
+    width: 35%;
+    float: left;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+section.spotlight p{
+    margin-bottom: 0px;
+}
+
+aside{
+    background-color: var(--text-background);
+}
+
+aside a{
+    color: var(--nav-active);
+}
+aside h1{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+}
+aside img{
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+dl{
+    text-align: center;
+}
+
+dd{
+    margin-bottom: 20px;
+}
+
+nav#bottom{
+    background-color: var(--nav-active);
+    color: var(--text-color);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+nav#bottom li a{
+    color: white;
+}
+
+footer p{
+    color: var(--text-color);
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: black;
+    margin: 0px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+nav#bottom ul{
+    flex-shrink: 
+    flex-
+}
